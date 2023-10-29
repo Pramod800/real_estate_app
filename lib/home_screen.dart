@@ -10,8 +10,24 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Scaffold(),
+    return SafeArea(
+      child: Scaffold(
+        body: Padding(
+          padding: EdgeInsets.all(15),
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Row(
+              children: [
+                Icon(
+                  Icons.house,
+                  color: Colors.blue,
+                  size: 50,
+                )
+              ],
+            )
+          ]),
+        ),
+      ),
     );
   }
 }
