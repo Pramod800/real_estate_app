@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:real_estate_app/home_screen.dart';
+import 'package:real_estate_app/screens/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,16 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Real Estate Nepal',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        
-       
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
-
